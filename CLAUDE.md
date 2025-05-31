@@ -21,25 +21,44 @@ The codebase follows a traditional static website structure:
 - **Locomotive Scroll v4.1.4**: Smooth scrolling and parallax
 - **Splitting.js**: Text splitting animations
 - **Lottie v5.9.1**: Animation player
-- **No build tools**: Currently no npm/webpack/vite setup
+- **Vite**: Modern build tool with hot module replacement
+- **Sass**: SCSS compilation with automatic builds
 
 ## Development Commands
 
-Since this is a static site without build tools:
+### Initial Setup
 ```bash
-# Start a local server (choose one):
-python -m http.server 8000
-# or
-npx serve .
-# or use any static file server
+# Install dependencies
+npm install
 
-# Access the site at:
-http://localhost:8000/home.html
+# Start development server with hot reload
+npm run dev
+
+# The site will open automatically at:
+http://localhost:3000/home.html
+```
+
+### Build Commands
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Watch SCSS files for changes (development)
+npm run sass:watch
+
+# Build CSS from SCSS (one time)
+npm run sass:build
+
+# Clean build artifacts and dependencies
+npm run clean
 ```
 
 ## Important Development Notes
 
-1. **CSS Compilation**: The SCSS files are pre-compiled. To modify styles, you'll need to compile SCSS manually or set up a build process.
+1. **CSS Compilation**: SCSS files are now automatically compiled when running `npm run dev` or `npm run build`.
 
 2. **JavaScript Modules**: The site uses ES6 modules with dynamic imports. Each page has its own animation handler module.
 
@@ -47,4 +66,6 @@ http://localhost:8000/home.html
 
 4. **Animation System**: Heavy use of GSAP animations triggered by scroll events and page transitions.
 
-5. **No Package Management**: Currently no package.json or dependency management system in place.
+5. **Package Management**: Dependencies are now managed via npm with package.json.
+
+6. **Build Output**: Production builds are generated in the `dist/` directory with optimized assets.

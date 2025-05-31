@@ -1,0 +1,30 @@
+{
+  "name": "timonielsen-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Tim Nielsen",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run sass:build && vite",
+    "build": "npm run sass:build && vite build",
+    "preview": "vite preview",
+    "sass:watch": "sass --watch scss:css --style expanded",
+    "sass:build": "sass scss:css --style compressed --no-source-map",
+    "clean": "rm -rf dist node_modules",
+    "install-deps": "npm install"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "vite": "^5.3.1",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.3",
+    "gsap": "^3.12.5",
+    "lazysizes": "^5.3.2",
+    "locomotive-scroll": "^4.1.4",
+    "lottie-web": "^5.12.2",
+    "masonry-layout": "^4.2.2",
+    "splitting": "^1.0.6",
+    "imagesloaded": "^5.0.0"
+  }
+}
