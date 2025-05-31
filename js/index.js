@@ -2,6 +2,7 @@ import handleMenu from "./modules/handleMenu.js";
 import horizontalScroll from "./modules/horizontalScroll.js";
 import hoverScaleGrey from "./modules/hoverScaleGrey.js";
 import handleTransitionMenu from "./modules/handleTransitionMenu.js";
+/* global lazySizes */
 import pageTransition from "./modules/pageTransition.js";
 import Slider from "./modules/skewSlider.js";
 import SplittingFunction from "./modules/Splitting.js";

@@ -1,3 +1,4 @@
+/* global bodymovin */
 const handleAnimateHome = () => {
   const lottieHomeClone = document.getElementById('lottie-home__clone')
   let renderHome = bodymovin.loadAnimation({

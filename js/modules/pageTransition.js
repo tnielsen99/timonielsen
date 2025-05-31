@@ -1,3 +1,4 @@
+/* global barba, gsap */
 import { initJsModule } from "../index.js";
 import handleAnimateAbout from "./handleAnimateAbout.js";
 import handleAnimateWorks from "./handleAnimateWorks.js";

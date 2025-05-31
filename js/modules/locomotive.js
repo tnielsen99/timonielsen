@@ -1,4 +1,5 @@
 // init LocomotiveScroll on page load
+/* global LocomotiveScroll */
 export const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
