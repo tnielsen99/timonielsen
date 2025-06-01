@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "npm run sass:build && vite",
-    "build": "npm run sass:build && vite build",
+    "build": "npm run sass:build && vite build && npm run copy-assets",
+    "build:vercel": "./build.sh",
+    "copy-assets": "cp -r Images dist/ && cp -r Fonts dist/ && mkdir -p dist/js/vendor && cp -r js/vendor/* dist/js/vendor/ && mkdir -p dist/css && cp -r css/vendor dist/css/ && cp lottie.min.js dist/",
     "preview": "vite preview",
     "sass:watch": "sass --watch scss:css --style expanded",
     "sass:build": "sass scss:css --style compressed --no-source-map",
