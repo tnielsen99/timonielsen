@@ -4,14 +4,45 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/home.html" },
-    { "source": "/index", "destination": "/home.html" },
-    { "source": "/home", "destination": "/home.html" },
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/works", "destination": "/pages/works.html" },
-    { "source": "/contact", "destination": "/pages/contact.html" },
-    { "source": "/playground", "destination": "/pages/play-ground.html" },
-    { "source": "/works/analytics-dashboard", "destination": "/works/eislab.html" },
-    { "source": "/works/engine-ml", "destination": "/works/kin.html" }
+    {
+      "source": "/",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/index",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/home",
+      "destination": "/home.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html"
+    },
+    {
+      "source": "/works",
+      "destination": "/pages/works.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html"
+    },
+    {
+      "source": "/playground",
+      "destination": "/pages/play-ground.html"
+    },
+    {
+      "source": "/works/analytics-dashboard",
+      "destination": "/works/eislab.html"
+    },
+    {
+      "source": "/works/engine-ml",
+      "destination": "/works/kin.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
