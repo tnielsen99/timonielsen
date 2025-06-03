@@ -29,7 +29,7 @@ export default defineConfig({
     port: 3000,
   },
   css: {
-    devSourcemap: true,
+    devSourcemap: false,
   },
   optimizeDeps: {
     exclude: ['js/vendor/**', 'css/vendor/**'],
