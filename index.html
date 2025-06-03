@@ -1,12 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=/home.html">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/Images/Favicon.png" />
+  <link rel="canonical" href="https://timonielsen.com">
+  <title>Timo Nielsen — Data Scientist & Engineer at McLaren</title>
+  <meta name="description"
+    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Timo Nielsen — Data Scientist & Engineer at McLaren">
+  <meta name="twitter:description"
+    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <meta name="twitter:image" content="/Images/image-sharing.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timonielsen.com">
+  <meta property="og:title" content="Timo Nielsen — Data Scientist & Engineer at McLaren">
+  <meta property="og:description"
+    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <meta property="og:image" content="/Images/image-sharing.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="theme-color" content="#ebebeb">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTQGZNJ84S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-TTQGZNJ84S');
+  </script>
+  <link rel=" stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <link rel="stylesheet" href="css/vendor/locomotive.css" />
 </head>
-<body>
-  <p>Redirecting to home page...</p>
+
+<body class="ol ol-mobile" data-barba="wrapper">
+  <div class="transition">
+    <div class="transition-group">
+      <span data-splitting class="transition-item active" id="home">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">H</span>ome
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="work">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">W</span>orks
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="about">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">A</span>bout
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="playground">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">P</span>layground
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="contact">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">C</span>ontact
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="back-to-works">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">L</span>eave
+        </div>
+      </span>
+      <span data-splitting class="transition-item" id="next-project">
+        <div class="transition-item__inner">
+          <span class="font-Harmond">N</span>ext project
+        </div>
+      </span>
+    </div>
+  </div>
+  <div class="loader">
+    <div id="progress"></div>
+  </div>
+  <header>
+    <nav class="nav container">
+      <div class="nav-logo">
+        <svg class="nav-logo__rotate colorMobile" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.9999 12L5.61501 20.2027C5.11281 20.7653 4.23154 20.7803 3.72078 20.2572C3.21795 19.7423 3.24334 18.879 3.79721 18.3849C6.53142 16.2566 9.26566 14.1283 11.9999 12Z"
+            fill="#1C1C1C" />
+          <path
+            d="M11.9999 11.9999L1.68496 13.2852C0.932055 13.3279 0.298262 12.7154 0.306974 11.9844C0.315539 11.2647 0.943908 10.6723 1.68496 10.7145C5.12328 11.143 8.56161 11.5714 11.9999 11.9999Z"
+            fill="#1C1C1C" />
+          <path
+            d="M11.9999 11.9999L3.79723 5.61501C3.23466 5.11281 3.21962 4.23154 3.74269 3.72078C4.25764 3.21795 5.12089 3.24334 5.61503 3.79721C7.74334 6.53142 9.87162 9.26566 11.9999 11.9999Z"
+            fill="#1C1C1C" />
+          <path
+            d="M11.9999 11.9999L10.7145 1.68496C10.6718 0.932055 11.2843 0.298262 12.0154 0.306974C12.735 0.315539 13.3275 0.943908 13.2852 1.68496C12.8568 5.12328 12.4283 8.56161 11.9999 11.9999Z"
+            fill="#1C1C1C" />
+          <path
+            d="M11.9999 12L18.3848 3.79735C18.887 3.23478 19.7682 3.21974 20.279 3.74282C20.7818 4.25776 20.7565 5.12102 20.2026 5.61515C17.4684 7.74346 14.7341 9.87174 11.9999 12Z"
+            fill="#1C1C1C" />
+          <path
+            d="M11.9999 11.9999L22.3149 10.7145C23.0678 10.6718 23.7016 11.2843 23.6929 12.0154C23.6843 12.735 23.056 13.3275 22.3149 13.2852C18.8766 12.8568 15.4382 12.4283 11.9999 11.9999Z"
+            fill="#1C1C1C" />
+          <path
+            d="M12 12L20.2027 18.3849C20.7653 18.8871 20.7803 19.7684 20.2572 20.2791C19.7423 20.782 18.879 20.7566 18.3849 20.2027C16.2566 17.4685 14.1283 14.7342 12 12Z"
+            fill="#1C1C1C" />
+          <path
+            d="M12 12L13.2853 22.315C13.328 23.0679 12.7155 23.7017 11.9845 23.693C11.2648 23.6845 10.6724 23.0561 10.7147 22.315C11.1431 18.8767 11.5715 15.4383 12 12Z"
+            fill="#1C1C1C" />
+        </svg>
+
+        <span class="nav-text nav-text__about">
+          <span>Data Science &</span> <br />
+          <span> Engineering Solutions </span>
+        </span>
+      </div>
+      <div class="nav-main menu-hover">
+        <a href="/home.html" class="menu__link" data-menu="home">
+          <span style="font-size: 24px; font-weight: bold; letter-spacing: 2px;">TIMO</span>
+        </a>
+      </div>
+
+      <div class="nav-version nav-version__about hide-on-mobile">
+        <span>Folio</span>
+        <span>Vol.1 <span>—</span></span>
+      </div>
+      <div class="nav-burger hide-on-desktop">
+        <button class="nav-burger__btn">
+          <span class="nav-burger__line nav-burger__about"> </span>
+          <span class="nav-burger__line nav-burger__about"> </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="container menu menu__abs hide-on-mobile">
+    <div class="menu__wrap">
+      <ul class="menu__inner menu-home">
+        <li class="menu__item menu-hover">
+          <a data-splitting data-menu="work" href="pages/works.html" class="menu__link">
+            <p class="menu__number">01</p>
+            <span class="menu__link-span">Works</span>
+            <span class="menu__link-span menu__link-clone">Works</span>
+          </a>
+        </li>
+        <li class="menu__item menu-hover">
+          <a data-splitting data-menu="about" href="pages/about.html" class="menu__link">
+            <p class="menu__number">02</p>
+            <span class="menu__link-span">About</span>
+            <span class="menu__link-span menu__link-clone">About</span>
+          </a>
+        </li>
+        <li class="menu__item menu-hover">
+          <a data-splitting data-menu="playground" href="pages/play-ground.html" class="menu__link">
+            <p class="menu__number">03</p>
+            <span class="menu__link-span">Playground</span>
+            <span class="menu__link-span menu__link-clone">Playground</span>
+          </a>
+        </li>
+        <li class="menu__item menu-hover">
+          <a data-splitting data-menu="contact" href="pages/contact.html" class="menu__link">
+            <p class="menu__number">04</p>
+            <span class="menu__link-span">Contact</span>
+            <span class="menu__link-span menu__link-clone">Contact</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">©2025</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div data-scroll-container class="home-prefix">
+    <main data-barba="container" data-barba-namespace="home">
+      <div data-scroll-section>
+        <div class="container">
+          <div class="wrapper">
+            <section class="hello">
+              <div class="hello-wrap">
+                <div class="hello-flex">
+                  <h1 data-splitting class="hello-title">
+                    <span class="font-sec"> Timo </span>
+                    <span>Nielsen</span>
+                  </h1>
+                  <p class="hello-sub">
+                    <span>(TN)</span>
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="person">
+              <div class="person-wrap">
+                <div class="person-col2">
+                  <img src="/Images/Shapes.svg" alt="" class="person-circle" />
+                  <div class="person-text">
+                    Timo Nielsen is a Data Scientist & Engineer at McLaren Automotive in Milton Keynes, UK
+                  </div>
+                </div>
+                <div class="person-col4">
+                  <div id="lottie-home__clone"></div>
+                </div>
+                <div class="person-col2">
+                  <img src="/Images/Shapes.svg" alt="" class="person-circle" />
+                  <div class="person-text">
+                    specializing in machine learning, data analytics, and engineering solutions for automotive
+                    performance.
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="footer footer-clone">
+              <div class="container">
+                <div class="footer-flex">
+                  <p class="footer-content">Engineering data-driven solutions.</p>
+                  &nbsp;
+                  <p class="footer-content">From Milton Keynes with passion.</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="preloader">
+        <div class="preloader-inner">
+          <div class="preloader-lotties">
+            <div id="lottie-loader"></div>
+            <div id="lottie-drop"></div>
+            <div id="lottie-home"></div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-flex">
+              <p class="footer-content">Engineering data-driven solutions.</p>
+              &nbsp;
+              <p class="footer-content">From Milton Keynes with passion.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="menuMobile">
+    <div class="container">
+      <div class="menuMobile-wrap">
+        <ul class="menuMobile-list">
+          <li class="menuMobile-item menu-hover">
+            <a href="pages/works.html" class="menuMobile-link menu__link" data-splitting data-menu="work">
+              <span class="menuMobile-link__wrap">
+                <span class="menuMobile-link__number">01</span>
+                <span class="menuMobile-link__animate">
+                  <span class="font-Harmond">W</span>orks
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="menuMobile-item menu-hover">
+            <a href="pages/about.html" class="menuMobile-link menu__link" data-splitting data-menu="about">
+              <span class="menuMobile-link__wrap">
+                <span class="menuMobile-link__number">02</span>
+                <span class="menuMobile-link__animate">
+                  <span class="font-Harmond">A</span>bout
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="menuMobile-item menu-hover">
+            <a href="pages/play-ground.html" class="menuMobile-link menu__link" data-splitting data-menu="playground">
+              <span class="menuMobile-link__wrap">
+                <span class="menuMobile-link__number">03</span>
+                <span class="menuMobile-link__animate">
+                  <span class="font-Harmond">P</span>layground
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="menuMobile-item menu-hover">
+            <a href="pages/contact.html" class="menuMobile-link menu__link" data-splitting data-menu="contact">
+              <span class="menuMobile-link__wrap">
+                <span class="menuMobile-link__number">04</span>
+                <span class="menuMobile-link__animate">
+                  <span class="font-Harmond">C</span>ontact
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="menuMobile-credit">
+          <div class="menuMobile-credit__inner">
+            <div class="menuMobile-col1">
+              <p class="menuMobile-text">CREDIT</p>
+            </div>
+            <div class="menuMobile-col1">
+              <div class="menuMobile-type">
+                <p class="menuMobile-grey">Development</p>
+                <p class="menuMobile-text">Timo Nielsen</p>
+              </div>
+              <div class="menuMobile-type">
+                <p class="menuMobile-grey">Illustration</p>
+                <p class="menuMobile-text">UI8</p>
+              </div>
+            </div>
+            <div class="menuMobile-col1">
+              <div class="menuMobile-type">
+                <p class="menuMobile-grey">Type</p>
+                <p class="menuMobile-text">Displaay</p>
+              </div>
+              <div class="menuMobile-type">
+                <p class="menuMobile-grey">Animation</p>
+                <p class="menuMobile-text">C+ Team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menuMobile-footer">
+          <p class="menuMobile-footer__text">Engineering data-driven solutions.</p>
+          &nbsp;
+          <p class="menuMobile-footer__text">From Milton Keynes with passion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/lazysizes.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
+  <script src="js/index.js" type="module"></script>
 </body>
+
 </html>
