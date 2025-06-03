@@ -1,7 +1,8 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build:vercel",
   "outputDirectory": "dist",
   "framework": null,
+  "installCommand": "npm install",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
