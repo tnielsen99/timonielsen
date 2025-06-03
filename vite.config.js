@@ -17,6 +17,10 @@ export default defineConfig({
         eislab: resolve(__dirname, 'works/eislab.html'),
         kin: resolve(__dirname, 'works/kin.html'),
       },
+      external: [
+        /^.*\/js\/vendor\/.*/,
+        /^.*\/css\/vendor\/.*/,
+      ],
     },
     copyPublicDir: false,
   },
@@ -26,5 +30,8 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+  },
+  optimizeDeps: {
+    exclude: ['js/vendor/**', 'css/vendor/**'],
   },
 });
