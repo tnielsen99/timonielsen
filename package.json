@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run sass:build && vite",
-    "build": "npm run sass:build && vite build && npm run copy-assets",
+    "build": "sass scss:css --style compressed --no-source-map && vite build && cp -r Images dist/ && cp -r Fonts dist/ && mkdir -p dist/js/vendor && cp -r js/vendor/* dist/js/vendor/ && mkdir -p dist/css && cp -r css/vendor dist/css/ && cp lottie.min.js dist/",
     "build:vercel": "node vercel-build.js",
     "copy-assets": "cp -r Images dist/ && cp -r Fonts dist/ && mkdir -p dist/js/vendor && cp -r js/vendor/* dist/js/vendor/ && mkdir -p dist/css && cp -r css/vendor dist/css/ && cp lottie.min.js dist/",
     "preview": "vite preview",

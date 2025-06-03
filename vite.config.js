@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   root: '.',
   base: '/',
-  publicDir: 'public',
+  publicDir: false,
   build: {
     outDir: 'dist',
     rollupOptions: {
@@ -18,7 +18,6 @@ export default defineConfig({
         kin: resolve(__dirname, 'works/kin.html'),
       },
     },
-    // Copy static assets
     copyPublicDir: false,
   },
   server: {
