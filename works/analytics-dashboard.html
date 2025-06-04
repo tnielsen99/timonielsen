@@ -6,23 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="/Images/Favicon.png" />
-  <link rel="canonical" href="https://timonielsen.com/works.html">
-  <title>Timo Nielsen - Projects & Solutions</title>
+  <link rel="canonical" href="https://timonielsen.com/works/analytics-dashboard">
+  <title>Analytics Dashboard — Timo Nielsen</title>
   <meta name="description"
-    content="Data science and engineering solutions. Specialized in analytics, machine learning, and system optimization.">
+    content="Real-time analytics dashboard for McLaren Automotive, providing insights into vehicle performance, manufacturing efficiency, and predictive maintenance.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Timo Nielsen - Projects & Solutions">
+  <meta name="twitter:title" content="Analytics Dashboard — Timo Nielsen">
   <meta name="twitter:description"
-    content="Data science and engineering solutions. Specialized in analytics, machine learning, and system optimization.">
-  <meta name="twitter:image" content="/Images/image-sharing.jpg">
+    content="Real-time analytics dashboard for McLaren Automotive, providing insights into vehicle performance, manufacturing efficiency, and predictive maintenance.">
+  <meta name="twitter:image" content="/Images/eislab.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://timonielsen.com/works.html">
-  <meta property="og:title" content="Timo Nielsen - Projects & Solutions">
+  <meta property="og:url" content="https://timonielsen.com/works/analytics-dashboard">
+  <meta property="og:title" content="Analytics Dashboard — Timo Nielsen">
   <meta property="og:description"
-    content="Data science and engineering solutions. Specialized in analytics, machine learning, and system optimization.">
-  <meta property="og:image" content="/Images/image-sharing.jpg">
+    content="Real-time analytics dashboard for McLaren Automotive, providing insights into vehicle performance, manufacturing efficiency, and predictive maintenance.">
+  <meta property="og:image" content="/Images/eislab.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta name="theme-color" content="#ebebeb">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTQGZNJ84S"></script>
   <script>
@@ -31,12 +33,13 @@
     gtag('js', new Date());
     gtag('config', 'G-TTQGZNJ84S');
   </script>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel=" stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
   <link rel="stylesheet" href="../css/vendor/locomotive.css" />
 </head>
 
-<body class="ol workJs" data-barba="wrapper">
+<body class="ol-x horizontalJs" data-barba="wrapper">
   <div class="transition">
     <div class="transition-group">
       <span data-splitting class="transition-item active" id="home">
@@ -111,8 +114,9 @@
         </svg>
 
         <span class="nav-text nav-text__about">
-          <span>Data Science &</span> <br />
-          <span> Engineering Solutions </span>
+          Open for
+          <br />
+          collaborations
         </span>
       </div>
       <div class="nav-main menu-hover">
@@ -137,28 +141,48 @@
     <div class="menu__wrap">
       <ul class="menu__inner menu-home">
         <li class="menu__item menu-hover">
-          <a data-splitting data-menu="work" href="./works.html" class="menu__link">
+          <a
+            data-splitting
+            data-menu="work"
+            href="../pages/works.html"
+            class="menu__link"
+          >
             <p class="menu__number">01</p>
             <span class="menu__link-span">Works</span>
             <span class="menu__link-span menu__link-clone">Works</span>
           </a>
         </li>
         <li class="menu__item menu-hover">
-          <a data-splitting data-menu="about" href="./about.html" class="menu__link">
+          <a
+            data-splitting
+            data-menu="about"
+            href="../pages/about.html"
+            class="menu__link"
+          >
             <p class="menu__number">02</p>
             <span class="menu__link-span">About</span>
             <span class="menu__link-span menu__link-clone">About</span>
           </a>
         </li>
         <li class="menu__item menu-hover">
-          <a data-splitting data-menu="playground" href="./play-ground.html" class="menu__link">
+          <a
+            data-splitting
+            data-menu="playground"
+            href="../pages/play-ground.html"
+            class="menu__link"
+          >
             <p class="menu__number">03</p>
             <span class="menu__link-span">Playground</span>
             <span class="menu__link-span menu__link-clone">Playground</span>
           </a>
         </li>
         <li class="menu__item menu-hover">
-          <a data-splitting data-menu="contact" href="./contact.html" class="menu__link">
+          <a
+            data-splitting
+            data-menu="contact"
+            href="../pages/contact.html"
+            class="menu__link"
+          >
             <p class="menu__number">04</p>
             <span class="menu__link-span">Contact</span>
             <span class="menu__link-span menu__link-clone">Contact</span>
@@ -170,189 +194,191 @@
       </ul>
     </div>
   </div>
-  <div data-scroll-container>
-    <main data-barba="container" data-barba-namespace="works">
-      <section class="content" data-scroll-section>
-        <div class="container content__wrap">
-          <div class="content__inner">
-            <div class="content__item" data-splitting>
-              <p>
-                engineering & data science <br />solutions since 2013
-              </p>
-            </div>
-            <div class="content__item hide-on-desktop" data-splitting>
-              <p>
-                Scroll down <br />
-                for more
-              </p>
-              <img src="/Images/arrow-down.svg" alt="">
-            </div>
-            <div class="content__title">
-              <h1 class="content__title-h1 content__title-active">
-                <span data-splitting>
-                  <span class="font-sec"> My </span>Projects
+  <div data-scroll-container data-horizontal="true">
+    <main data-barba="container" data-barba-namespace="works-detail">
+      <div class="horizontal" data-scroll-section>
+        <div class="horizontal-wrap">
+          <div data-scroll data-scroll-sticky data-scroll-target=".horizontal" class="sec sec-1">
+            <section class="container project">
+              <h1 data-splitting class="project-one-line">
+                <span>Real-time</span>
+                <br />
+                <span>
+                  Analytics
+                  <span class="font-Harmond"> Dashboard</span>
                 </span>
               </h1>
-              <h3 class="content__title-data" id="analytics-dashboard">
-                <span>
-                  <span class="font-sec">
-                    Performance
-                  </span>
-                  <br />
-                  <span>Analytics Dashboard</span>
-                </span>
-              </h3>
-              <h3 class="content__title-data" id="engine-ml">
-                <span>
-                  <span class="font-sec">
-                    Engine
-                  </span>
-                  <br />
-                  <span>ML Models</span>
-                </span>
-              </h3>
-              <h3 class="content__title-data" id="data-governance">
-                <span>
-                  <span class="font-sec">
-                    Data
-                  </span>
-                  <br />
-                  <span>Governance System</span>
-                </span>
-              </h3>
-              <h3 class="content__title-data" id="azure-migration">
-                <span>
-                  <span class="font-sec">
-                    Azure
-                  </span>
-                  <br />
-                  <span>Database Migration</span>
-                </span>
-              </h3>
-              <h3 class="content__title-data" id="powertrain">
-                <span>
-                  <span class="font-sec">
-                    Powertrain
-                  </span>
-                  <br />
-                  <span>Integration</span>
-                </span>
-              </h3>
-              <h3 class="content__title-data" id="turbocharger">
-                <span>
-                  <span class="font-sec">
-                    F1
-                  </span>
-                  <br />
-                  <span>Turbocharger Design</span>
-                </span>
-              </h3>
-            </div>
-            <div class="content__item" data-splitting>
-              <p>
-                hold and drag <br />
-                to discover
-              </p>
-            </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container info info-text_animate">
+              <div class="info-wrap">
+                <div class="info-col1">
+                  <div class="info-type">
+                    <p class="info-grey">Client</p>
+                    <p class="info-text">McLaren Automotive</p>
+                  </div>
+                  <div class="info-type">
+                    <p class="info-grey">Year</p>
+                    <p class="info-text">2023-2024</p>
+                  </div>
+                </div>
+                <div class="info-col2">
+                  <div class="info-type">
+                    <p class="info-grey">Role</p>
+                    <p class="info-text">Lead Data Scientist</p>
+                  </div>
+                  <div class="info-type">
+                    <p class="info-grey">Category</p>
+                    <p class="info-text">Data Visualization & Analytics</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="project-image">
+              <div class="container">
+                <img
+                  class="lazyload"
+                  data-src="/Images/eislab.png"
+                  alt="Analytics Dashboard Interface"
+                />
+              </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container project-paragraph1">
+              <div class="project-paragraph__wrap">
+                <p>
+                  <span>•</span> Developed a comprehensive real-time analytics
+                  dashboard for McLaren Automotive, enabling data-driven
+                  decision-making across manufacturing, performance testing,
+                  and customer experience departments.
+                </p>
+                <br />
+                <p>
+                  The platform processes over 100GB of daily telemetry data
+                  from vehicles and production lines, providing instant insights
+                  through advanced visualizations and predictive analytics models.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container project-features">
+              <h3>Key Features</h3>
+              <ul class="project-features__list">
+                <li>• Real-time telemetry processing from 500+ sensors</li>
+                <li>• Predictive maintenance algorithms with 94% accuracy</li>
+                <li>• Manufacturing efficiency monitoring and optimization</li>
+                <li>• Custom KPI dashboards for different departments</li>
+                <li>• Automated anomaly detection and alerting system</li>
+                <li>• Historical trend analysis and forecasting</li>
+              </ul>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container sb-image" style="--aspect-ratio: 16/9">
+              <img
+                class="lazyload"
+                data-src="/Images/playground-1.png"
+                alt="Dashboard Overview"
+              />
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container project-paragraph">
+              <h3>Technical Implementation</h3>
+              <div class="project-paragraph__wrap">
+                <p>
+                  Built on Azure cloud infrastructure with a microservices
+                  architecture, the dashboard leverages Apache Kafka for
+                  real-time data streaming, Azure Data Lake for storage,
+                  and Power BI embedded for interactive visualizations.
+                  The backend APIs are developed in Python with FastAPI,
+                  while the frontend uses React with TypeScript for a
+                  responsive user experience.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container sb-image" style="--aspect-ratio: 3/2">
+              <img
+                class="lazyload"
+                data-src="/Images/playground-2.png"
+                alt="Performance Metrics View"
+              />
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container sb-image" style="--aspect-ratio: 1/1">
+              <img
+                class="lazyload"
+                data-src="/Images/playground-3.png"
+                alt="Predictive Analytics Module"
+              />
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container project-paragraph">
+              <h3>Impact & Results</h3>
+              <div class="project-paragraph__wrap">
+                <p>
+                  The analytics dashboard has transformed McLaren's approach
+                  to data utilization, resulting in a 35% reduction in
+                  unplanned downtime, 20% improvement in production efficiency,
+                  and enhanced customer satisfaction through proactive
+                  maintenance recommendations. The platform now serves as
+                  the central nervous system for data-driven operations
+                  across the organization.
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="sec">
+            <section class="container project-cta">
+              <div class="project-cta__inner">
+                <a
+                  href="../pages/works.html"
+                  class="project-cta__close menu-hover"
+                  data-menu="back-to-works"
+                >
+                  <img
+                    src="/Images/close-icon.png"
+                    alt="close icon"
+                    class="project-cta__icon"
+                  />
+                  <span class="font-sec">Close</span>
+                </a>
+                <a
+                  href="engine-ml.html"
+                  class="project-cta__next menu-hover"
+                  data-menu="next-project"
+                >
+                  <span>Next</span>
+                  <span class="font-sec">Project</span>
+                </a>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
-
-      <section class="slider js-slider" data-scroll-section>
-        <div class="slider__inner js-slider__inner">
-          <div class="slide js-slide">
-            <div class="slide__version">
-              <div class="slide__version-time">
-                <span>2023 <span class="slide__version-font">-</span> 2024</span>
-              </div>
-              <div class="slide__version-total">2 projects</div>
-            </div>
-            <div class="slide__list">
-              <a href="/works/analytics-dashboard.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="analytics-dashboard" class="filter-normal" src="/Images/eislab.png" alt="" />
-                </div>
-              </a>
-              <a href="/works/engine-ml.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="engine-ml" class="filter-normal" src="/Images/matvoyce.png" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="slide js-slide">
-            <div class="slide__version">
-              <div class="slide__version-time">
-                <span>2021 <span class="slide__version-font">-</span> 2022</span>
-              </div>
-              <div class="slide__version-total">2 projects</div>
-            </div>
-            <div class="slide__list">
-              <a href="works/data-governance.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="data-governance" class="filter-normal" src="/Images/ascon-system.jpg" alt="" />
-                </div>
-              </a>
-              <a href="works/azure-migration.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="azure-migration" class="filter-normal" src="/Images/mathijs-1.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="slide js-slide">
-            <div class="slide__version">
-              <div class="slide__version-time">
-                <span>2020 <span class="slide__version-font">-</span> 2021</span>
-              </div>
-              <div class="slide__version-total">1 project</div>
-            </div>
-            <div class="slide__list">
-              <a href="works/powertrain.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="powertrain" class="filter-normal" src="/Images/project-8.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="slide js-slide">
-            <div class="slide__version">
-              <div class="slide__version-time">
-                <span>2013 <span class="slide__version-font">-</span> 2014</span>
-              </div>
-              <div class="slide__version-total">1 project</div>
-            </div>
-            <div class="slide__list">
-              <a href="works/turbocharger.html" class="slide__bg">
-                <div class="slide__image">
-                  <div class="slide__mask2"></div>
-                  <div class="slide__mask"></div>
-                  <img data-content="turbocharger" class="filter-normal" src="/Images/project-13.jpg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      </div>
     </main>
   </div>
+
   <div class="menuMobile">
     <div class="container">
       <div class="menuMobile-wrap">
         <ul class="menuMobile-list">
           <li class="menuMobile-item menu-hover">
-            <a href="./works.html" class="menuMobile-link menu__link" data-splitting data-menu="work">
+            <a
+              href="../pages/works.html"
+              class="menuMobile-link menu__link"
+              data-splitting
+              data-menu="work"
+            >
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">01</span>
                 <span class="menuMobile-link__animate">
@@ -362,7 +388,12 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="./about.html" class="menuMobile-link menu__link" data-splitting data-menu="about">
+            <a
+              href="../pages/about.html"
+              class="menuMobile-link menu__link"
+              data-splitting
+              data-menu="about"
+            >
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">02</span>
                 <span class="menuMobile-link__animate">
@@ -372,7 +403,12 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="./play-ground.html" class="menuMobile-link menu__link" data-splitting data-menu="playground">
+            <a
+              href="../pages/play-ground.html"
+              class="menuMobile-link menu__link"
+              data-splitting
+              data-menu="playground"
+            >
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">03</span>
                 <span class="menuMobile-link__animate">
@@ -382,7 +418,12 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="./contact.html" class="menuMobile-link menu__link" data-splitting data-menu="contact">
+            <a
+              href="../pages/contact.html"
+              class="menuMobile-link menu__link"
+              data-splitting
+              data-menu="contact"
+            >
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">04</span>
                 <span class="menuMobile-link__animate">
@@ -421,13 +462,18 @@
         </div>
 
         <div class="menuMobile-footer">
-          <p class="menuMobile-footer__text">Engineering data-driven solutions.</p>
+          <p class="menuMobile-footer__text">
+            Engineering data-driven solutions.
+          </p>
           &nbsp;
-          <p class="menuMobile-footer__text">Transforming insights into impact.</p>
+          <p class="menuMobile-footer__text">
+            From Milton Keynes with passion.
+          </p>
         </div>
       </div>
     </div>
   </div>
+
   <script src="../js/vendor/lazysizes.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
