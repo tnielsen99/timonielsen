@@ -4,4 +4,4 @@ function lerp(a, b, n) {
 
 export {
   lerp
-}
+};

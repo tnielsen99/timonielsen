@@ -2,7 +2,6 @@ const handleLoadLottie = () => {
   let lottieContact = document.getElementById('lottie-contact');
   let lottieAbout = document.getElementById('lottie-about');
   let lottieEmailBlack = document.getElementById('lottie-email__black');
-  let lottieEmailWhite = document.getElementById('lottie-email__white');
 
   let renderAbout = bodymovin.loadAnimation({
     container: lottieAbout,
