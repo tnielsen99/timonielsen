@@ -6,20 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="/Images/Favicon.png" />
-  <link rel="canonical" href="https://timonielsen.com">
-  <title>Timo Nielsen — Data Scientist & Engineer at McLaren</title>
-  <meta name="description"
-    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <link rel="canonical" href="https://timonielsen.com/under-construction">
+  <title>Under Construction — Timo Nielsen</title>
+  <meta name="description" content="This page is currently under construction. Please check back soon for updates.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Timo Nielsen — Data Scientist & Engineer at McLaren">
-  <meta name="twitter:description"
-    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <meta name="twitter:title" content="Under Construction — Timo Nielsen">
+  <meta name="twitter:description" content="This page is currently under construction. Please check back soon for updates.">
   <meta name="twitter:image" content="/Images/image-sharing.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://timonielsen.com">
-  <meta property="og:title" content="Timo Nielsen — Data Scientist & Engineer at McLaren">
-  <meta property="og:description"
-    content="Data Scientist and Engineer at McLaren Automotive with 11+ years of experience in data analytics, machine learning, and engineering solutions.">
+  <meta property="og:url" content="https://timonielsen.com/under-construction">
+  <meta property="og:title" content="Under Construction — Timo Nielsen">
+  <meta property="og:description" content="This page is currently under construction. Please check back soon for updates.">
   <meta property="og:image" content="/Images/image-sharing.jpg">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
@@ -33,13 +30,132 @@
     gtag('js', new Date());
     gtag('config', 'G-TTQGZNJ84S');
   </script>
-  <link rel=" stylesheet" href="css/style.css" />
+  <link rel=" stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
   <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-  <link rel="stylesheet" href="css/vendor/locomotive.css" />
+  <link rel="stylesheet" href="../css/vendor/locomotive.css" />
+  <style>
+    .construction-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .construction-content {
+      max-width: 800px;
+      width: 100%;
+    }
+    
+    .construction-title {
+      font-size: clamp(3rem, 8vw, 6rem);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    
+    .construction-subtitle {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      margin-bottom: 3rem;
+      opacity: 0.8;
+    }
+    
+    .construction-message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      opacity: 0.7;
+    }
+    
+    .construction-animation {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      margin: 0 auto 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .construction-grid {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+    
+    .grid-item {
+      background: rgba(100, 200, 255, 0.1);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .grid-item::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      background: rgba(100, 200, 255, 0.8);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse 3s ease-in-out infinite;
+    }
+    
+    .grid-item:nth-child(odd) {
+      animation: fadeInOut 4s ease-in-out infinite;
+    }
+    
+    .grid-item:nth-child(even) {
+      animation: fadeInOut 4s ease-in-out infinite 0.5s;
+    }
+    
+    @keyframes pulse {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0.1;
+      }
+      50% {
+        opacity: 0.3;
+      }
+    }
+    
+    .construction-back {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border: 1px solid rgba(28, 28, 28, 0.2);
+      border-radius: 50px;
+      text-decoration: none;
+      color: #1C1C1C;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    
+    .construction-back:hover {
+      background: #1C1C1C;
+      color: #ebebeb;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
 
-<body class="ol ol-mobile" data-barba="wrapper">
+<body class="ol" data-barba="wrapper">
   <div class="transition">
     <div class="transition-group">
       <span data-splitting class="transition-item active" id="home">
@@ -119,7 +235,7 @@
         </span>
       </div>
       <div class="nav-main menu-hover">
-        <a href="/home.html" class="menu__link" data-menu="home">
+        <a href="../home.html" class="menu__link" data-menu="home">
           <span style="font-size: 24px; font-weight: bold; letter-spacing: 2px;">TIMO</span>
         </a>
       </div>
@@ -136,110 +252,86 @@
       </div>
     </nav>
   </header>
-  <div class="container menu menu__abs hide-on-mobile">
-    <div class="menu__wrap">
-      <ul class="menu__inner menu-home">
-        <li class="menu__item menu-hover">
-          <a data-splitting data-menu="work" href="pages/under-construction.html" class="menu__link">
-            <p class="menu__number">01</p>
-            <span class="menu__link-span">Works</span>
-            <span class="menu__link-span menu__link-clone">Works</span>
-          </a>
-        </li>
-        <li class="menu__item menu-hover">
-          <a data-splitting data-menu="about" href="pages/under-construction.html" class="menu__link">
-            <p class="menu__number">02</p>
-            <span class="menu__link-span">About</span>
-            <span class="menu__link-span menu__link-clone">About</span>
-          </a>
-        </li>
-        <li class="menu__item menu-hover">
-          <a data-splitting data-menu="playground" href="pages/under-construction.html" class="menu__link">
-            <p class="menu__number">03</p>
-            <span class="menu__link-span">Playground</span>
-            <span class="menu__link-span menu__link-clone">Playground</span>
-          </a>
-        </li>
-        <li class="menu__item menu-hover">
-          <a data-splitting data-menu="contact" href="pages/under-construction.html" class="menu__link">
-            <p class="menu__number">04</p>
-            <span class="menu__link-span">Contact</span>
-            <span class="menu__link-span menu__link-clone">Contact</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">©2025</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div data-scroll-container class="home-prefix">
-    <main data-barba="container" data-barba-namespace="home">
+  
+  <div data-scroll-container>
+    <main data-barba="container" data-barba-namespace="construction">
       <div data-scroll-section>
-        <div class="container">
-          <div class="wrapper">
-            <section class="hello">
-              <div class="hello-wrap">
-                <div class="hello-flex">
-                  <h1 data-splitting class="hello-title">
-                    <span class="font-sec"> Timo </span>
-                    <span>Nielsen</span>
-                  </h1>
-                  <p class="hello-sub">
-                    <span>(TN)</span>
-                  </p>
-                </div>
+        <div class="construction-container">
+          <div class="construction-content">
+            <div class="construction-animation">
+              <div class="construction-grid">
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
               </div>
-            </section>
-            <section class="person">
-              <div class="person-wrap">
-                <div class="person-col2">
-                  <img src="/Images/Shapes.svg" alt="" class="person-circle" />
-                  <div class="person-text">
-                    Timo Nielsen is a Data Scientist & Engineer at McLaren Automotive in Milton Keynes, UK
-                  </div>
-                </div>
-                <div class="person-col4">
-                  <div id="lottie-home__clone"></div>
-                </div>
-                <div class="person-col2">
-                  <img src="/Images/Shapes.svg" alt="" class="person-circle" />
-                  <div class="person-text">
-                    specializing in machine learning, data analytics, and engineering solutions for automotive performance.
-                  </div>
-                </div>
-              </div>
-            </section>
-            <footer class="footer footer-clone">
-              <div class="container">
-                <div class="footer-flex">
-                  <p class="footer-content">Engineering data-driven solutions.</p>
-                  &nbsp;
-                  <p class="footer-content">From Milton Keynes with passion.</p>
-                </div>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </div>
-      <div class="preloader">
-        <div class="preloader-inner">
-          <div class="preloader-lotties">
-            <div id="lottie-loader"></div>
-            <div id="lottie-drop"></div>
-            <div id="lottie-home"></div>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-flex">
-              <p class="footer-content">Engineering data-driven solutions.</p>
-              &nbsp;
-              <p class="footer-content">From Milton Keynes with passion.</p>
             </div>
+            
+            <h1 class="construction-title" data-splitting>
+              <span>Under</span>
+              <br />
+              <span class="font-Harmond">Construction</span>
+            </h1>
+            
+            <p class="construction-subtitle">
+              This page is being enhanced with new features
+            </p>
+            
+            <p class="construction-message">
+              I'm currently working on bringing you an improved experience. 
+              This section will be available soon with exciting new content 
+              and features. Thank you for your patience.
+            </p>
+            
+            <a href="../home.html" class="construction-back menu-hover" data-menu="home">
+              Back to Home
+            </a>
           </div>
-        </footer>
+        </div>
       </div>
     </main>
   </div>
@@ -249,7 +341,7 @@
       <div class="menuMobile-wrap">
         <ul class="menuMobile-list">
           <li class="menuMobile-item menu-hover">
-            <a href="pages/under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="work">
+            <a href="./under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="work">
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">01</span>
                 <span class="menuMobile-link__animate">
@@ -259,7 +351,7 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="pages/under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="about">
+            <a href="./under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="about">
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">02</span>
                 <span class="menuMobile-link__animate">
@@ -269,7 +361,7 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="pages/under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="playground">
+            <a href="./under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="playground">
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">03</span>
                 <span class="menuMobile-link__animate">
@@ -279,7 +371,7 @@
             </a>
           </li>
           <li class="menuMobile-item menu-hover">
-            <a href="pages/under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="contact">
+            <a href="./under-construction.html" class="menuMobile-link menu__link" data-splitting data-menu="contact">
               <span class="menuMobile-link__wrap">
                 <span class="menuMobile-link__number">04</span>
                 <span class="menuMobile-link__animate">
@@ -326,7 +418,7 @@
     </div>
   </div>
 
-  <script src="js/vendor/lazysizes.min.js"></script>
+  <script src="../js/vendor/lazysizes.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
@@ -335,7 +427,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
-  <script src="js/index.js" type="module"></script>
+  <script src="../js/index.js" type="module"></script>
 </body>
 
 </html>
