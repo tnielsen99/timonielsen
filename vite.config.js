@@ -14,6 +14,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'pages/contact.html'),
         playground: resolve(__dirname, 'pages/play-ground.html'),
         works: resolve(__dirname, 'pages/works.html'),
+        construction: resolve(__dirname, 'pages/under-construction.html'),
         eislab: resolve(__dirname, 'works/eislab.html'),
         kin: resolve(__dirname, 'works/kin.html'),
       },
