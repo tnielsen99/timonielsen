@@ -10,7 +10,7 @@
     "copy-assets": "cp -r Images dist/ && cp -r Fonts dist/ && mkdir -p dist/js/vendor && cp -r js/vendor/* dist/js/vendor/ && mkdir -p dist/css && cp -r css/vendor dist/css/ && cp lottie.min.js dist/",
     "preview": "vite preview",
     "sass:watch": "sass --watch scss:css --style expanded",
-    "sass:build": "sass scss:css --style compressed --no-source-map",
+    "sass:build": "sass scss:css --style compressed --no-source-map && cp css/main.css css/style.css",
     "clean": "rm -rf dist node_modules",
     "install-deps": "npm install"
   },
