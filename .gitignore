@@ -35,4 +35,4 @@ Thumbs.db
 .sass-cache/
 *.css.map
 *.sass.map
-*.scss.map
+*.scss.map.claude/
