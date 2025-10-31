@@ -32,7 +32,8 @@
         }
         @include respond-above(xl) {
             margin-bottom: 0;
-            font-size: 15.625vw;
+            font-size: clamp(11.5rem, 12vw, 18rem);
+            white-space: nowrap;
         }
     }
     &-sub {

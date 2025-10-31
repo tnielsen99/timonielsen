@@ -8,6 +8,7 @@ import Slider from "./modules/skewSlider.js";
 import SplittingFunction from "./modules/Splitting.js";
 import handleLoadLottie from "./modules/handleLoadLottie.js";
 import handleHoverSlider from "./modules/handleHoverSlider.js";
+import handleAnimateHome from "./modules/handleAnimateHome.js";
 import handleAnimateWorks from "./modules/handleAnimateWorks.js";
 import handleAnimateAbout from "./modules/handleAnimateAbout.js";
 import handleAnimateContact from "./modules/handleAnimateContact.js";
@@ -31,6 +32,7 @@ export const initJsGlobal = () => {
   SplittingFunction();
   pageTransition();
   handleSplitTextWorksDetail();
+  handleAnimateHome();
   handleAnimateAbout();
   handleAnimateWorks();
   handleAnimateContact();

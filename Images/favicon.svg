@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#FFFFFF"/>
+  <!-- T -->
+  <rect x="4" y="6" width="10" height="2" fill="#1C1C1C"/>
+  <rect x="8" y="6" width="2" height="20" fill="#1C1C1C"/>
+  <!-- N -->
+  <rect x="16" y="6" width="2" height="20" fill="#1C1C1C"/>
+  <rect x="24" y="6" width="2" height="20" fill="#1C1C1C"/>
+  <path d="M18 6 L18 26 L24 11 L24 6 L18 21 Z" fill="#1C1C1C"/>
+</svg>
