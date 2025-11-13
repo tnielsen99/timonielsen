@@ -1,0 +1,84 @@
+.value-props {
+  margin: 8rem 0;
+
+  @include respond-above(md) {
+    margin: 10rem 0;
+  }
+
+  @include respond-above(xl) {
+    margin: 12.5vh 0;
+  }
+}
+
+.value-props-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  text-align: center;
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  @include respond-above(xl) {
+    gap: 4.167vw;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+.value-prop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  @include respond-above(xl) {
+    gap: 2.083vw;
+  }
+}
+
+.value-prop-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+
+  @include respond-above(xl) {
+    width: 5.208vw;
+    height: 5.208vw;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: $black;
+  }
+
+  // Subtle hover effect
+  .value-prop-item:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.value-prop-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  max-width: 28ch;
+  color: $black;
+
+  @include respond-above(md) {
+    font-size: 1.8rem;
+    max-width: 24ch;
+  }
+
+  @include respond-above(xl) {
+    font-size: 1.25vw;
+    line-height: 110%;
+  }
+}

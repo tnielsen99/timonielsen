@@ -20,14 +20,16 @@
 // Home
 @import 'pages/home/preloader';
 @import 'pages/home/hello';
+@import 'pages/home/value-props';
 @import 'pages/home/person';
 
 // About
 @import 'pages/about/index';
 @import 'pages/about/award';
-@import 'pages/about/clinets';
+@import 'pages/about/clients';
 @import 'pages/about/hobby';
 @import 'pages/about/process';
+@import 'pages/about/achievements';
 
 // Contact
 @import 'pages/contact/index';
