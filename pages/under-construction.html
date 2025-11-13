@@ -18,41 +18,9 @@
     gtag('config', 'G-EM3JMY7NKM');
   </script>
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-  <link rel="stylesheet" href="../css/vendor/locomotive.css" />
 </head>
 
-<body class="ol ol-mobile" data-barba="wrapper">
-  <div class="transition">
-    <div class="transition-group">
-      <span data-splitting class="transition-item active" id="home">
-        <div class="transition-item__inner">
-          <span class="font-Harmond">H</span>ome
-        </div>
-      </span>
-      <span data-splitting class="transition-item" id="work">
-        <div class="transition-item__inner">
-          <span class="font-Harmond">W</span>orks
-        </div>
-      </span>
-      <span data-splitting class="transition-item" id="about">
-        <div class="transition-item__inner">
-          <span class="font-Harmond">A</span>bout
-        </div>
-      </span>
-      <span data-splitting class="transition-item" id="playground">
-        <div class="transition-item__inner">
-          <span class="font-Harmond">P</span>layground
-        </div>
-      </span>
-      <span data-splitting class="transition-item" id="contact">
-        <div class="transition-item__inner">
-          <span class="font-Harmond">C</span>ontact
-        </div>
-      </span>
-    </div>
-  </div>
+<body class="ol ol-mobile">
 
   <header>
     <nav class="nav container">
@@ -154,46 +122,42 @@
     </div>
   </div>
 
-  <div data-scroll-container>
-    <main data-barba="container" data-barba-namespace="under-construction">
-      <div data-scroll-section>
-        <div class="container">
-          <div class="wrapper">
-            <section class="hello" style="min-height: 80vh; display: flex; align-items: center; justify-content: center;">
-              <div class="hello-wrap">
-                <div class="hello-flex" style="text-align: center;">
-                  <h1 data-splitting class="hello-title" style="font-size: clamp(6rem, 10vw, 12rem); margin-bottom: 3rem;">
-                    <span class="font-sec">Under</span>
-                    <span>Construction</span>
-                  </h1>
-                  <div style="max-width: 60ch; margin: 0 auto;">
-                    <p style="font-size: 2rem; line-height: 140%; margin-bottom: 2rem; font-weight: 500;">
-                      This section is currently being tailored with relevant case studies and examples.
-                    </p>
-                    <p style="font-size: 1.6rem; line-height: 150%; color: rgb(135, 135, 135);">
-                      In the meantime, feel free to learn more about my approach on the
-                      <a href="about.html" style="text-decoration: underline;">About page</a> or
-                      <a href="contact.html" style="text-decoration: underline;">get in touch</a> directly.
-                    </p>
-                  </div>
-                </div>
+  <main>
+    <div class="container">
+      <div class="wrapper">
+        <section class="hello" style="min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+          <div class="hello-wrap">
+            <div class="hello-flex" style="text-align: center;">
+              <h1 class="hello-title" style="font-size: clamp(6rem, 10vw, 12rem); margin-bottom: 3rem;">
+                <span class="font-sec">Under</span>
+                <span>Construction</span>
+              </h1>
+              <div style="max-width: 60ch; margin: 0 auto;">
+                <p style="font-size: 2rem; line-height: 140%; margin-bottom: 2rem; font-weight: 500;">
+                  This section is currently being tailored with relevant case studies and examples.
+                </p>
+                <p style="font-size: 1.6rem; line-height: 150%; color: rgb(135, 135, 135);">
+                  In the meantime, feel free to learn more about my approach on the
+                  <a href="about.html" style="text-decoration: underline;">About page</a> or
+                  <a href="contact.html" style="text-decoration: underline;">get in touch</a> directly.
+                </p>
               </div>
-            </section>
-
-            <footer class="footer" style="margin-top: 8rem;">
-              <div class="container">
-                <div class="footer-flex">
-                  <p class="footer-content">Turning data into decisions.</p>
-                  &nbsp;
-                  <p class="footer-content">Remote consulting worldwide.</p>
-                </div>
-              </div>
-            </footer>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <footer class="footer" style="margin-top: 8rem;">
+          <div class="container">
+            <div class="footer-flex">
+              <p class="footer-content">Turning data into decisions.</p>
+              &nbsp;
+              <p class="footer-content">Remote consulting worldwide.</p>
+            </div>
+          </div>
+        </footer>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 
   <div class="menuMobile">
     <div class="container">
@@ -250,16 +214,25 @@
     </div>
   </div>
 
-  <script src="../js/vendor/lazysizes.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.1/lottie.min.js"></script>
-  <script src="../js/index.js" type="module"></script>
+  <!-- Simplified: Only basic menu toggle script -->
+  <script>
+    // Simple mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const burger = document.querySelector('.nav-burger__btn');
+      const mobileMenu = document.querySelector('.menuMobile');
+      const body = document.body;
+
+      if (burger && mobileMenu) {
+        burger.addEventListener('click', function() {
+          mobileMenu.classList.toggle('active');
+          body.classList.toggle('menu-open');
+        });
+      }
+
+      // Remove loading cursor
+      document.body.style.cursor = 'default';
+    });
+  </script>
 </body>
 
 </html>
