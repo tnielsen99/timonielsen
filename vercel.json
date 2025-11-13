@@ -23,7 +23,7 @@
     },
     {
       "source": "/works",
-      "destination": "/pages/works.html"
+      "destination": "/pages/under-construction.html"
     },
     {
       "source": "/contact",
@@ -31,7 +31,7 @@
     },
     {
       "source": "/playground",
-      "destination": "/pages/play-ground.html"
+      "destination": "/pages/under-construction.html"
     },
     {
       "source": "/works/analytics-dashboard",

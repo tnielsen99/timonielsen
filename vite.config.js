@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'home.html'),
         about: resolve(__dirname, 'pages/about.html'),
         contact: resolve(__dirname, 'pages/contact.html'),
+        'under-construction': resolve(__dirname, 'pages/under-construction.html'),
         playground: resolve(__dirname, 'pages/play-ground.html'),
         works: resolve(__dirname, 'pages/works.html'),
         eislab: resolve(__dirname, 'works/eislab.html'),
