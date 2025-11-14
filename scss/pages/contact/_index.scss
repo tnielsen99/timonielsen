@@ -179,6 +179,133 @@
       display: inline-block;
     }
   }
+
+  &-subtitle {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #333;
+    margin: 2rem auto 4rem;
+    max-width: 60ch;
+
+    @include respond-above(md) {
+      font-size: 1.8rem;
+      margin: 2.4rem auto 5rem;
+    }
+
+    @include respond-above(xl) {
+      font-size: 1.25vw;
+      margin: 2.083vw auto 4.167vw;
+    }
+  }
+
+  &-cta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    margin: 0 auto 4rem;
+    max-width: 40rem;
+
+    @include respond-above(md) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      max-width: none;
+    }
+
+    @include respond-above(xl) {
+      gap: 2.5vw;
+      margin-bottom: 3.125vw;
+    }
+  }
+
+  &-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+
+    @include respond-above(md) {
+      font-size: 1.5rem;
+    }
+
+    @include respond-above(xl) {
+      font-size: 0.938vw;
+      gap: 0.625vw;
+    }
+  }
+
+  &-info-icon {
+    color: $black;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    @include respond-above(xl) {
+      font-size: 1.042vw;
+    }
+  }
+
+  &-credibility {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    margin: 3rem auto 0;
+    padding: 2.4rem 2rem;
+    background: rgba($black, 0.02);
+    border-radius: 1.2rem;
+    max-width: 50rem;
+
+    @include respond-above(md) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 2.4rem;
+      max-width: none;
+    }
+
+    @include respond-above(xl) {
+      gap: 3.125vw;
+      padding: 2.083vw;
+      border-radius: 0.833vw;
+      margin-top: 3.125vw;
+    }
+  }
+}
+
+.credibility-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $black;
+
+  @include respond-above(md) {
+    font-size: 1.5rem;
+  }
+
+  @include respond-above(xl) {
+    font-size: 0.938vw;
+    gap: 0.625vw;
+  }
+
+  svg {
+    flex-shrink: 0;
+    color: $black;
+    opacity: 0.6;
+
+    @include respond-above(xl) {
+      width: 1.146vw;
+      height: 1.146vw;
+    }
+  }
+
+  span {
+    white-space: nowrap;
+  }
 }
 
 .col-1 {

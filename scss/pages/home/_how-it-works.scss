@@ -1,0 +1,194 @@
+.how-it-works {
+  margin: 8rem 0;
+  padding: 0 2rem;
+
+  @include respond-above(md) {
+    margin: 10rem 0;
+    padding: 0;
+  }
+
+  @include respond-above(xl) {
+    margin: 12.5vh 0;
+  }
+}
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 6rem;
+
+  @include respond-above(md) {
+    margin-bottom: 8rem;
+  }
+
+  @include respond-above(xl) {
+    margin-bottom: 8.333vw;
+  }
+}
+
+.how-it-works-title {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 110%;
+  margin: 0 0 1.6rem 0;
+  color: $black;
+
+  @include respond-above(md) {
+    font-size: 5.6rem;
+  }
+
+  @include respond-above(xl) {
+    font-size: 3.646vw;
+  }
+
+  .font-sec {
+    font-family: $secondFont;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.how-it-works-subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+
+  @include respond-above(md) {
+    font-size: 1.8rem;
+  }
+
+  @include respond-above(xl) {
+    font-size: 1.25vw;
+  }
+}
+
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  @include respond-above(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  @include respond-above(xl) {
+    gap: 3.125vw;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.how-it-works-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3.2rem 2.4rem;
+  background: $white;
+  border: 1px solid rgba($black, 0.1);
+  border-radius: 1.2rem;
+  transition: all 0.3s ease;
+
+  @include respond-above(xl) {
+    padding: 2.083vw 1.563vw;
+    border-radius: 0.833vw;
+  }
+
+  &:hover {
+    border-color: rgba($black, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba($black, 0.08);
+  }
+}
+
+.step-number {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #999;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+
+  @include respond-above(xl) {
+    font-size: 0.938vw;
+    margin-bottom: 1.563vw;
+  }
+}
+
+.step-content {
+  width: 100%;
+}
+
+.step-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  margin: 0 0 1.2rem 0;
+  color: $black;
+
+  @include respond-above(md) {
+    font-size: 2.4rem;
+  }
+
+  @include respond-above(xl) {
+    font-size: 1.563vw;
+    margin-bottom: 1.042vw;
+  }
+}
+
+.step-description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #333;
+  margin: 0 0 2rem 0;
+
+  @include respond-above(md) {
+    font-size: 1.6rem;
+  }
+
+  @include respond-above(xl) {
+    font-size: 1.042vw;
+    margin-bottom: 1.563vw;
+  }
+}
+
+.step-outcome {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba($black, 0.08);
+
+  @include respond-above(xl) {
+    gap: 0.625vw;
+    padding-top: 1.563vw;
+  }
+
+  svg {
+    flex-shrink: 0;
+    color: $black;
+    opacity: 0.6;
+
+    @include respond-above(xl) {
+      width: 1.042vw;
+      height: 1.042vw;
+    }
+  }
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $black;
+    opacity: 0.8;
+
+    @include respond-above(md) {
+      font-size: 1.5rem;
+    }
+
+    @include respond-above(xl) {
+      font-size: 0.938vw;
+    }
+  }
+}
